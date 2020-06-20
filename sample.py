@@ -15,7 +15,7 @@ def subscribe_start(broker_host_name, topic):
     client.set_recv_handler(handler)
     # 接続とsubscribe開始
     client.connect(logprint=True)
-    client.subscribe_to(recv_topic)
+    client.subscribe_from_broker(recv_topic)
 
 # Publush
 def publish_start(broker_host_name, topic):
@@ -25,7 +25,7 @@ def publish_start(broker_host_name, topic):
     # 接続とメッセージを10個Publish
     client.connect(logprint=True)
     for i in range(10):
-        client.publish_to(send_topic, str(i))
+        client.publish_to_broker(send_topic, str(i))
 
 
 if __name__ == '__main__':
