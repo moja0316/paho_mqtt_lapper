@@ -1,5 +1,5 @@
 # paho_mqtt_lapper
-MQTTクライアント https://www.eclipse.org/paho/ をより気軽に使用するためのPythonラッパーです
+MQTTクライアント https://www.eclipse.org/paho/ をより気軽に使用するためのPythonラッパー(主に自分用)
 
 ## 必要なもの
 - Python (v3.7で動作確認)
